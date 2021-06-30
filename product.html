@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="fontawesome-free-5.15.3-web/css/all.css">
+    <title>Web DeMo JS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <div class="navigation">
+        <ul>
+            <li>
+                <a href="">
+                <span class="icon"><i class="fab fa-font-awesome"></i></span>
+                <span class="title"> <h2>MY WEB SITE</h2></a></span>
+            </a>
+            </li>
+            <li>
+                <a href="">
+                <span class="icon "><i class="fas fa-home"></i></span>
+                <span class="title">DashBoard</span>
+            </a>
+            </li>
+            <li>
+                <a href="">
+                <span class="icon"><i class="fas fa-user"></i></span>
+                <span class="title">Customers</span>
+            </a>
+            </li>
+            <li>
+                <a href="product.html">
+                <span class="icon"><i class="fas fa-shopping-cart"></i></span>
+                <span class="title">Product</span>
+            </a>
+            </li>
+            <li>
+                <a href="">
+                <span class="icon"><i class="fab fa-facebook-messenger"></i></span>
+                <span class="title">Help</span>
+            </a>
+            </li>
+            <li>
+                <a href="">
+                <span class="icon"><i class="fas fa-cog"></i></span>
+                <span class="title">Setting</span>
+            </a>
+            </li>
+            <li>
+                <a href="">
+                <span class="icon"><i class="fas fa-lock"></i></span>
+                <span class="title">Password</span>
+            </a>
+            </li>
+            <li>
+                <a href="">
+                <span class="icon"><i class="fas fa-sign-in-alt"></i></span>
+                <span class="title">Sign In</span>
+            </a>
+            </li>
+        </ul>
+    </div>
+    <!-- End Menu -->
+    <!-- Main -->
+    <div class="main">
+        <div class="topbar">
+            <div class="toggle" onclick ="toggleMenu()"><span ><i class="fas fa-bars"></span></i></div>
+                <div class="search">
+                    <label for="">
+                        <input type="text" name="" placeholder="Search in Here" id="">
+                        <i class="fas fa-search"></i>
+                    </label>
+                </div>
+                <div class="user">
+                    <img src="bun-ca-cay.jpg" alt="">
+                </div>
+        </div>
+        <!-- End Header -->
+        <div class="details">
+            <div class="View">
+                <div class="cardHeader">
+                    <h3>View Product</h3>
+                    <a href="#" class ="btn" onclick="renderlist()">View All</a>
+                </div>
+                <div class="addproductcard">
+                    <a href="addproduct.html" class ="btn-add">
+                    <i class="fas fa-plus-circle"></i>
+                    Add New Product </a>
+                </div>
+                <table >
+                    <thead>
+                        <tr>
+                            <td>ID </td>
+                            <td>Name Product</td>
+                            <td>Price</td>
+                            <td>DESC</td>
+                            <td>Quantity</td>
+                            <td>CateGory</td>
+                            <td>Address</td>
+                            <td>Delete</td>
+                            <td>UPDATE</td>
+
+                        </tr>
+                    </thead>
+                    <tbody id = "listproduct">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="app.js"></script>
+</body>
+</html>

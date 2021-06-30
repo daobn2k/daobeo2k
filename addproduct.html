@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="fontawesome-free-5.15.3-web/css/all.css">
+    <title>Web DeMo JS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <div class="navigation">
+        <ul>
+            <li>
+                <a href="">
+                <span class="icon"><i class="fab fa-font-awesome"></i></span>
+                <span class="title"> <h2>MY WEB SITE</h2></a></span>
+            </a>
+            </li>
+            <li>
+                <a href="">
+                <span class="icon "><i class="fas fa-home"></i></span>
+                <span class="title">DashBoard</span>
+            </a>
+            </li>
+            <li>
+                <a href="">
+                <span class="icon"><i class="fas fa-user"></i></span>
+                <span class="title">Customers</span>
+            </a>
+            </li>
+            <li>
+                <a href="product.html">
+                <span class="icon"><i class="fas fa-shopping-cart"></i></span>
+                <span class="title">Product</span>
+            </a>
+            </li>
+            <li>
+                <a href="">
+                <span class="icon"><i class="fab fa-facebook-messenger"></i></span>
+                <span class="title">Help</span>
+            </a>
+            </li>
+            <li>
+                <a href="">
+                <span class="icon"><i class="fas fa-cog"></i></span>
+                <span class="title">Setting</span>
+            </a>
+            </li>
+            <li>
+                <a href="">
+                <span class="icon"><i class="fas fa-lock"></i></span>
+                <span class="title">Password</span>
+            </a>
+            </li>
+            <li>
+                <a href="">
+                <span class="icon"><i class="fas fa-sign-in-alt"></i></span>
+                <span class="title">Sign In</span>
+            </a>
+            </li>
+        </ul>
+    </div>
+    <!-- End Menu -->
+    <!-- Main -->
+    <div class="main">
+        <div class="topbar">
+            <div class="toggle" onclick ="toggleMenu()"><span ><i class="fas fa-bars"></span></i></div>
+                <div class="search">
+                    <label for="">
+                        <input type="text" name="" placeholder="Search in Here" id="">
+                        <i class="fas fa-search"></i>
+                    </label>
+                </div>
+                <div class="user">
+                    <img src="bun-ca-cay.jpg" alt="">
+                </div>
+        </div>
+        <!-- End Header -->
+        <div class ="cardAddproduct">
+            <div class="title">Form Add New ProDuct</div>
+            <div class="user-details">
+                <div class="input-box">
+                    <span class="detail">Name Product</span>
+                    <input type="text" name = "name" placeholder="" id ="name" >
+                </div>
+                <div class="input-box">
+                    <span class="detail">Price</span>
+                    <input type="text" name = "price" placeholder="" id ="price" >
+                </div>
+                <div class="input-box">
+                    <span class="detail">description</span>
+                    <input type="text" name = "desc" placeholder="" id ="desc" >
+                </div>
+                <div class="input-box">
+                    <span class="detail">Quantity</span>
+                    <input type="text" name = "quantity" placeholder="" id ="quantity" >
+                </div>
+                <div class="input-box">
+                    <span class="detail">CateGory</span>
+                    <input type="email" name = "cateGory" placeholder="" id ="cateGory" >
+                </div>
+                <div class="input-box">
+                    <span class="detail">Address</span>
+                    <input type="email" name = "address" placeholder="" id ="address" >
+                </div>
+               
+              
+            </div>   
+
+            <div class="button" id = "button">
+                <button onclick = "save()" > Thêm</button>
+             </div>
+           
+        </div>
+    </div>
+</div>
+<script src="app.js"></script>
+</body>
+</html>
