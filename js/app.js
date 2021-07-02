@@ -18,7 +18,6 @@ function toggleMenu(){
 function renderlist(){
     let  products = localStorage.getItem('products') ? JSON.parse(localStorage.getItem('products')) :[];
 
-if(products.length == 0) return false
 let table = ""
 products.forEach((product,index)=> {
     var id = index
@@ -68,7 +67,6 @@ if(idtmp){
 else{
     document.getElementById("addbtn").setAttribute("onclick","save()");
     document.getElementById("addbtn").innerText = "Thêm Mới";
-
 
 }
 
@@ -181,6 +179,8 @@ if(nameproductvalue && pricevalue && descvalue && quantityvalue && CateGoryvalue
         document.getElementById('cateGory').value = "";
         document.getElementById('address').value = "";
         alert("Thêm Mới Thành Công")
+
+        window.location.replace("product.html")
     }
 }
 
