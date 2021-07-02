@@ -8,7 +8,7 @@
     <title>Web DeMo JS</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body onload = "Onupdate()">
 <div class="container">
     <div class="navigation">
         <ul>
@@ -81,41 +81,61 @@
         <div class ="cardAddproduct">
             <div class="title">Form Add New ProDuct</div>
             <div class="user-details">
-                <div class="input-box">
+                <div class="input-box ">
                     <span class="detail">Name Product</span>
                     <input type="text" name = "name" placeholder="" id ="name" >
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation-circle"></i>
+                    <small class = "form-message"></small>
                 </div>
-                <div class="input-box">
+                <div class="input-box ">
                     <span class="detail">Price</span>
                     <input type="text" name = "price" placeholder="" id ="price" >
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation-circle"></i>
+                    <small class = "form-message"> </small>
                 </div>
-                <div class="input-box">
+                <div class="input-box ">
                     <span class="detail">description</span>
                     <input type="text" name = "desc" placeholder="" id ="desc" >
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation-circle"></i>
+                    <small class = "form-message"> </small>
                 </div>
                 <div class="input-box">
                     <span class="detail">Quantity</span>
                     <input type="text" name = "quantity" placeholder="" id ="quantity" >
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation-circle"></i>
+                    <small class = "form-message"></small>
                 </div>
                 <div class="input-box">
                     <span class="detail">CateGory</span>
-                    <input type="email" name = "cateGory" placeholder="" id ="cateGory" >
+                    <input type="text" name = "cateGory" placeholder="" id ="cateGory" >
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation-circle"></i>
+                    <small class = "form-message"></small>
                 </div>
                 <div class="input-box">
                     <span class="detail">Address</span>
-                    <input type="email" name = "address" placeholder="" id ="address" >
+                    <input type="text" name = "address" placeholder="" id ="address" >
+                    <i class="fas fa-check-circle"></i>
+                    <i class="fas fa-exclamation-circle"></i>
+                    <small class = "form-message"> Lỗi Cụ Mày Rồi Kìa</small>
                 </div>
-               
-              
             </div>   
 
             <div class="button" id = "button">
-                <button onclick = "save()" > Thêm</button>
+               <button  id = "addbtn" ></button>
              </div>
            
         </div>
     </div>
 </div>
-<script src="app.js"></script>
+<script>
+ 
+</script>
+
+<script src="js/app.js"></script>
 </body>
 </html>

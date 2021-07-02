@@ -80,19 +80,25 @@
         <!-- End Header -->
         <div class="details">
             <div class="View">
+              
                 <div class="cardHeader">
                     <h3>View Product</h3>
                     <a href="#" class ="btn" onclick="renderlist()">View All</a>
                 </div>
                 <div class="addproductcard">
-                    <a href="addproduct.html" class ="btn-add">
+                    <a href="addproduct.html" class ="btn-add" >
                     <i class="fas fa-plus-circle"></i>
                     Add New Product </a>
+                </div>
+                <div id = "search-viewproduct" class="search ">
+                    <label for="">
+                        <input type="text" name="" placeholder="Search in Here" id="Inputsearch">
+                        <i class="fas fa-search" onclick = "search()"></i>
+                    </label>
                 </div>
                 <table >
                     <thead>
                         <tr>
-                            <td>ID </td>
                             <td>Name Product</td>
                             <td>Price</td>
                             <td>DESC</td>
@@ -111,6 +117,7 @@
         </div>
     </div>
 </div>
-<script src="app.js"></script>
+<script src="js/search.js"></script>
+<script src="js/app.js"></script>
 </body>
 </html>

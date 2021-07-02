@@ -329,16 +329,34 @@ color: #000;
 margin-left: 20px;
 }
 
-.details .View table tbody td:nth-child(2){
-    padding-left: 30px;
+.details .View table tbody td:nth-child(1){
+    text-align: center;
 }
-
-.details .View table thead td:nth-child(4){
+.details .View table tbody td:nth-child(2){
+}
+.details .View table tbody td:nth-child(4){
+}
+.details .View table thead td:nth-child(3){
     text-align: center;
     padding-right: 70px;
 }
 
+.details .search label input {
+    width: 100%;
+    height: 40px;
+    margin-left: 200px;
+    border-radius: 40px;
+    padding: 5px 20px;
+    padding-left: 40px;
+outline: none;
+border:  1px solid rgba(0, 0, 0, 0.2);
+}
 
+.details .search label .fas{
+    position: absolute;
+    left: 215px;
+    top: 0px;
+}
 
 .cardAddproduct{
     
@@ -381,6 +399,8 @@ margin: 20px 0 12px 0;
    margin-bottom: 15px;
     width: calc(100%/2);
 }
+
+
 .user-details .input-box .detail{
     font-size: 20px;
     font-weight: 500;
@@ -403,7 +423,38 @@ margin: 20px 0 12px 0;
 {
 cursor: pointer;
 }
+.user-details .input-box i{
+    visibility: hidden;
+}
 
+.user-details .input-box small{
+    visibility: hidden;
+}
+.user-details .input-box.error small {
+    display: flex;
+    font-size: 17px;
+    padding-top: 5px;
+    color:#e74c3c;
+    visibility: visible;
+}
+
+.user-details .input-box.success input {
+    border-color: #2ecc71;
+    
+} 
+.user-details .input-box.error input {
+    border-color: #e74c3c;
+} 
+
+.user-details .input-box.success .fa-check-circle{
+    color: #2ecc71;
+    visibility: visible;
+}
+
+.user-details .input-box.error .fa-exclamation-circle{
+    color: #e74c3c;
+    visibility: visible;
+}
 .button{
     height: 45px;
     display: flex;
