@@ -7,7 +7,10 @@ Inputsearch.onkeyup = (e) =>{
     
     let proData = e.target.value;
    var data =  searchTable(proData,products)
-   search(data)
+ 
+    search(data)
+
+  
    
 }
 
@@ -20,7 +23,6 @@ function searchTable(value,data){
             var name =  data[i].name.toLowerCase();
             if(name.includes(value)){
                 fitlerdata.push(data[i])
-
             }
     }
 
@@ -30,7 +32,6 @@ function searchTable(value,data){
 function search(data){
 
 
-    if(data.length == 0) return false
     var table = ""
  for(var i = 0 ; i < data.length;i++)  
     {
@@ -49,6 +50,7 @@ function search(data){
            </tr>
                `
     };
+
     document.getElementById('listproduct').innerHTML = table;
 
 }

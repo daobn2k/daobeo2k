@@ -97,6 +97,7 @@ products[idtmp]=({
 });
 localStorage.setItem('products',JSON.stringify(products));
 alert("Cật Nhật Thành Công")
+window.location.replace("product.html")
 
 }
 
